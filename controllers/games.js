@@ -1,5 +1,5 @@
 const sendAllGames = (req, res) => {
   res.send(req.games);
-}32323232323
+}3232323232325354253253
 
 module.exports = { sendAllGames, sendUpdatedGames };
