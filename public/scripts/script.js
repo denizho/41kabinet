@@ -7,6 +7,16 @@ const fetchGames = async url => {
   }
 };
 
+
+const BoSin = (object, template) => {
+    const node = template.content.cloneNode(true);
+    node.querySelector("a").href = object.link;
+    node.querySelector("img").src = object.image;
+    node.querySelector("h2").textContent = object.title;
+    node.querySelector("p").textContent = object.description;
+    return node;
+}
+
 const showPlaceholder = (selector, message) => {
   const placeholder = document.createElement("li");
   placeholder.classList.add("placeholder");
